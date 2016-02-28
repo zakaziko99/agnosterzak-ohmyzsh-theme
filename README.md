@@ -49,6 +49,8 @@ ZSH_THEME="agnosterzak"
 AgnosterZak is configurable. You can change colors and which segments you want
 or don't want to see. All options must be overridden in your **.zshrc** file.
 
+## Segments
+
 ### Battery Life
 
 The info will display in case of the laptop is not charging
@@ -58,18 +60,21 @@ The info will display in case of the laptop is not charging
 |Battery status|Color
 |--------------|-----|
 |more than 39%|`green`
-|less than %|`yellow`
+|less than 40% and more than 19%|`yellow`
 |less than 20%|`red`
 
 ### Git
+![git-preview-1](images/agnosterzak-git-1.png)
+
+![git-preview-2](images/agnosterzak-git-2.png)
 
 #### Color States
-|Background Color|Foreground Color|Meaning
+|Background Color & Foreground Color|Meaning
 |----------------|----------------|-------|
-|`green`|`white`|Absolutely clean state
-|`magenta`|`white`|There is stashed files
-|`yellow`|`red`|There is new untracked files
-|`red`|`white`|There is modified or deleted files but unstaged
+|![git-clean](images/agnosterzak-git-01.png)|Absolutely clean state
+|![git-stash](images/agnosterzak-git-02.png)|There is stashed files
+|![git-untracked](images/agnosterzak-git-03.png)|There is new untracked files
+|![git-modified](images/agnosterzak-git-04.png)|There is modified or deleted files but unstaged
 
 #### Icons
 |Icon|Meaning
