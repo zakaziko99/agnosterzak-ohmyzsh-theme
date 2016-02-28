@@ -64,17 +64,17 @@ The info will display in case of the laptop is not charging
 |less than 20%|`red`
 
 ### Git
-![git-preview-1](images/agnosterzak-git-1.png)
+![git-preview-1](images/agnosterzak-git-a.png)
 
-![git-preview-2](images/agnosterzak-git-2.png)
+![git-preview-2](images/agnosterzak-git-b.png)
 
 #### Color States
 |Background Color & Foreground Color|Meaning
 |----------------|----------------|-------|
-|![git-clean](images/agnosterzak-git-01.png)|Absolutely clean state
-|![git-stash](images/agnosterzak-git-02.png)|There is stashed files
-|![git-untracked](images/agnosterzak-git-03.png)|There is new untracked files
-|![git-modified](images/agnosterzak-git-04.png)|There is modified or deleted files but unstaged
+|![git-clean](images/agnosterzak-git-1.png)|Absolutely clean state
+|![git-stash](images/agnosterzak-git-2.png)|There is stashed files
+|![git-untracked](images/agnosterzak-git-3.png)|There is new untracked files
+|![git-modified](images/agnosterzak-git-4.png)|There is modified or deleted files but unstaged
 
 #### Icons
 |Icon|Meaning
