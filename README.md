@@ -72,9 +72,9 @@ The info will display in case of the laptop is not charging
 |Background Color & Foreground Color|Meaning
 |----------------|----------------|-------|
 |![git-clean](images/agnosterzak-git-1.png)|Absolutely clean state
-|![git-stash](images/agnosterzak-git-2.png)|There is stashed files
-|![git-untracked](images/agnosterzak-git-3.png)|There is new untracked files
-|![git-modified](images/agnosterzak-git-4.png)|There is modified or deleted files but unstaged
+|![git-stash](images/agnosterzak-git-2.png)|There are stashed files
+|![git-untracked](images/agnosterzak-git-3.png)|There are new untracked files
+|![git-modified](images/agnosterzak-git-4.png)|There are modified or deleted files but unstaged
 
 #### Icons
 |Icon|Meaning
