@@ -89,7 +89,7 @@ prompt_context() {
 prompt_battery() {
   HEART='♥ '
 
-  if [[ "$OSTYPE" = darwin* ]] ; then
+  if [[ $(uname) == "Darwin" ]] ; then
 
     function battery_is_charging() {
       [ $(ioreg -rc AppleSmartBattery | grep -c '^.*"ExternalConnected"\ =\ No') -eq 1 ]
