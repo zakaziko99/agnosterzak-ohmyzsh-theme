@@ -79,9 +79,9 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ -n "$SSH_CLIENT" ]]; then
-    prompt_segment magenta white "$fg_bold[white]%(!.%{%F{white}%}.)$USER@%m$fg_no_bold[white]"
+    prompt_segment magenta white "%{$fg_bold[white]%(!.%{%F{white}%}.)%}$USER@%m%{$fg_no_bold[white]%}"
   else
-    prompt_segment yellow magenta "$fg_bold[magenta]%(!.%{%F{magenta}%}.)@$USER$fg_no_bold[magenta]"
+    prompt_segment yellow magenta "%{$fg_bold[magenta]%(!.%{%F{magenta}%}.)%}@$USER%{$fg_no_bold[magenta]%}"
   fi
 }
 
@@ -124,7 +124,7 @@ prompt_battery() {
       else
         prompt_segment red white
       fi
-      echo -n "$fg_bold[white]$HEART$(battery_pct_remaining)%%$fg_no_bold[white]"
+      echo -n "${$fg_bold[white]%}$HEART$(battery_pct_remaining)%%%{$fg_no_bold[white]%}"
     fi
 
   fi
@@ -242,7 +242,7 @@ prompt_git() {
 
     prompt_segment $bgclr $fgclr
 
-    echo -n "$fg_bold[$fgclr]${ref/refs\/heads\//$PL_BRANCH_CHAR $upstream_prompt}${mode}$to_push$to_pull$clean$tagged$stashed$untracked$modified$deleted$added$ready_commit$fg_no_bold[$fgclr]"
+    echo -n "%{$fg_bold[$fgclr]%}${ref/refs\/heads\//$PL_BRANCH_CHAR $upstream_prompt}${mode}$to_push$to_pull$clean$tagged$stashed$untracked$modified$deleted$added$ready_commit%{$fg_no_bold[$fgclr]%}"
   fi
 }
 
@@ -283,7 +283,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment cyan white "$fg_bold[white]%~$fg_no_bold[white]"
+  prompt_segment cyan white "%{$fg_bold[white]%}%~%{$fg_no_bold[white]%}"
 }
 
 # Virtualenv: current working virtualenv
@@ -295,7 +295,7 @@ prompt_virtualenv() {
 }
 
 prompt_time() {
-  prompt_segment blue white "$fg_bold[white]%D{%a %e %b - %H:%M}$fg_no_bold[white]"
+  prompt_segment blue white "%{$fg_bold[white]%}%D{%a %e %b - %H:%M}%{$fg_no_bold[white]%}"
 }
 
 # Status:
