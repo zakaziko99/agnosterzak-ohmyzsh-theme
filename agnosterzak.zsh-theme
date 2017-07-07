@@ -132,7 +132,7 @@ prompt_battery() {
       else
         prompt_segment red white
       fi
-      echo -n "$fg_bold[white]$HEART$(battery_pct_remaining)%%$fg_no_bold[white]"
+      echo -n "%{$fg_bold[white]%}$HEART$(battery_pct_remaining)%%%{$fg_no_bold[white]%}"
     fi
   fi
 
@@ -171,7 +171,7 @@ prompt_battery() {
       else
         prompt_segment red white
       fi
-      echo -n "${$fg_bold[white]%}$HEART$(battery_pct_remaining)%%%{$fg_no_bold[white]%}"
+      echo -n "%{$fg_bold[white]%}$HEART$(battery_pct_remaining)%%%{$fg_no_bold[white]%}"
     fi
 
   fi
