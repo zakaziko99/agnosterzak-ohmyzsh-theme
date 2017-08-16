@@ -70,7 +70,7 @@ The info will display in case of the laptop is not charging
 
 #### Color States
 |Background Color & Foreground Color|Meaning
-|----------------|----------------|-------|
+|----------------|----------------|
 |![git-clean](images/agnosterzak-git-1.png)|Absolutely clean state
 |![git-stash](images/agnosterzak-git-2.png)|There are stashed files
 |![git-untracked](images/agnosterzak-git-3.png)|There are new untracked files
