@@ -252,7 +252,7 @@ prompt_git() {
 
     local number_of_stashes="$(git stash list -n1 2> /dev/null | wc -l)"
     if [[ $number_of_stashes -gt 0 ]]; then
-      stashed=" $number_of_stashes⚙"
+      stashed=" ${number_of_stashes##*(  )}⚙"
       bgclr='magenta'
       fgclr='white'
     fi
