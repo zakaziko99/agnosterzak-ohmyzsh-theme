@@ -53,7 +53,8 @@ or don't want to see. All options must be overridden in your **.zshrc** file.
 
 ### Battery Life
 
-The info will display in case of the laptop is not charging
+The info will display in case of the laptop is not charging.
+If you're using Linux, install `acpi` package (i.e. `sudo apt install acpi`).
 
 ![Preview](images/agnosterzak-02.png)
 
